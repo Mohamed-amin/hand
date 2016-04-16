@@ -6,4 +6,4 @@ Tests are run by Karma, you just need to `npm test`
 
 # Dev Dependeicies 
 Browserify, jslint, loadash and jQuery.
-Simple and generic for an project.
+Simple and generic for any project.
