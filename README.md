@@ -3,8 +3,9 @@
 
 To be proitritized
 
-* _.pick
-* _.get
+- [x] _.get
+
+*  _.pick
 * _.map
 * _.filter
 * _.unqueBy
