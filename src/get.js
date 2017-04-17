@@ -6,16 +6,15 @@ module.exports = function get(source, path, fallback){
 	}
 	var p = path.split('.');
 	var acc = null;
-	
 	for (var i = 0; i < p.length; i++) { 
-		if(!acc){
-			acc = source[p[i]]
+		if(acc === undefined) { break;}
+		if(acc === null){
+			acc = source[p[i]];
 		} else{
-			acc = acc[p[i]]
+			acc = acc[p[i]];
 		}
 	}
 	
-
 	return acc;
 };
 
