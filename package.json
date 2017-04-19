@@ -2,25 +2,18 @@
   "name": "js-init",
   "version": "0.1.0",
   "devDependencies": {
-    "browserify": "^13.0.0",
-    "jasmine-core": "^2.4.1",
     "jshint": "^2.9.1",
-    "karma": "^0.13.22",
-    "karma-browserify": "^5.0.3",
-    "karma-jasmine": "^0.3.8",
-    "karma-jshint-preprocessor": "0.0.6",
-    "karma-phantomjs-launcher": "^1.0.0",
     "matcha": "^0.7.0",
-    "phantomjs": "^2.1.7",
-    "sinon": "^1.17.3",
-    "watchify": "^3.9.0"
+    "mocha": "^2.5.3"
   },
   "scripts": {
+    "start": "",
     "lint": "jshint src test",
-    "test": "karma start"
+    "test": "./node_modules/.bin/mocha",
+    "dev": "./node_modules/.bin/mocha  --watch"
   },
   "dependencies": {
-    "jquery": "^2.2.3",
+    "chai": "^3.5.0",
     "lodash": "^4.9.0"
   }
 }

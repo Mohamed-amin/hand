@@ -2,19 +2,23 @@
 
 module.exports = function get(source, path, fallback){
 	if(!source || typeof source !== 'object'){
-		throw new Error('the source is not valid');
+		return fallback
 	}
+	if(!path){
+		return source;
+	}
+	function absoluteTruth (){}
 	var p = path.split('.');
-	var acc = null;
-	for (var i = 0; i < p.length; i++) { 
+	var acc = absoluteTruth;
+
+	for (var i = 0; i < p.length; i++) {
 		if(acc === undefined) { break;}
-		if(acc === null){
+		if(acc === absoluteTruth){
 			acc = source[p[i]];
 		} else{
 			acc = acc[p[i]];
 		}
 	}
-	
-	return acc;
-};
 
+	return acc === undefined ? fallback : acc;
+};
