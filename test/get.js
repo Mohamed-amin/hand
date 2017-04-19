@@ -4,6 +4,7 @@ var expect = chai.expect;
 var someData = {
 	data: {
 		user: {
+			some:null,
 			id:1,
 			list:['item',1,2],
 			name: 'Amin',
@@ -39,4 +40,15 @@ describe("get", function(){
 	it("Can access array", function(){
 		expect(get(someData, 'data.user.list.0')).to.equal('item');
 	});
+	// Commented this feature out, as I don't think its really critical
+	// it("should return the string chars from path", function(){
+	// 	expect(get('mohamed', '1')).to.equal('o');
+	// })
+	it("should accept path as string or array", function(){
+		expect(get(someData, ['data','user','list','0'])).to.equal('item');
+	})
+
+	it("should be able to return null values", function(){
+		expect(get(someData, 'data.user.some', {})).to.equal(null);
+	})
 });

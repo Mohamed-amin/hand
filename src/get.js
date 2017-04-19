@@ -8,7 +8,7 @@ module.exports = function get(source, path, fallback){
 		return source;
 	}
 	function absoluteTruth (){}
-	var p = path.split('.');
+	var p = Array.isArray(path) ? path : path.split('.');
 	var acc = absoluteTruth;
 
 	for (var i = 0; i < p.length; i++) {
