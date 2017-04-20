@@ -8,10 +8,9 @@ feel free to suggest more, taking into consideration is that project is not here
 
 Done:
 - [x] _.get
-
+- [x] _.pick
 TODO:
 - [ ] _.cloneDeep
-- [ ] _.pick
 - [ ] _.map
 - [ ] _.filter
 - [ ] _.unqueBy
