@@ -21,7 +21,12 @@ var someData = {
 var list = [10, 20, 30]
 
 describe("get", function(){
-	it("should return undefined if no source passed", function(){
+
+	it("should return undefined safely", function(){
+		expect(get(null, 'a.b.c')).to.equal(undefined);
+	});
+
+	it("should return undefined if no proper source/path passed", function(){
 		expect(get('lalaland')).to.equal(undefined);
 	});
 
