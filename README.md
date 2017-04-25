@@ -9,6 +9,7 @@ feel free to suggest more, taking into consideration is that project is not here
 Done:
 - [x] _.get
 - [x] _.pick
+- [x] _.merge
 
 TODO:
 - [ ] _.cloneDeep
