@@ -2,7 +2,8 @@
 
 function isObject(o) {
     if(o === null || o === undefined) return false;
-    return o.toString() === '[object Object]' ? true : false;
+
+    return o instanceof Object;
 }
 function quickMerge(a, b) {
     a = a || {};
