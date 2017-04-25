@@ -7,20 +7,20 @@ To be proitritized later but here is the list of functions that we use the most.
 feel free to suggest more, taking into consideration is that project is not here to create another lodash, but we are just providing a ready-done functions recipes that we use every day at the ultimate performance possible.
 
 Done:
-- [x] _.get
-- [x] _.pick
-- [x] _.merge
+- [x] **_.get**
+- [x] **_.pick**
+- [x] **_.merge**
 
 TODO:
-- [ ] _.cloneDeep
+- [ ] _.flatten
+- [ ] _.find
 - [ ] _.map
 - [ ] _.filter
-- [ ] _.unqueBy
+- [ ] _.unqiueBy
+- [ ] _.isPlainObject
 - [ ] _.camelCase
-- [ ] _.find
 - [ ] _.range
 - [ ] _.isEqual
 - [ ] _.debounce
 - [ ] _.includes
-- [ ] _.flatten
-- [ ] _.isPlainObject
+- [ ] _.cloneDeep
